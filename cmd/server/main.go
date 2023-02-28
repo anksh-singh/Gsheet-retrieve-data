@@ -1,7 +1,7 @@
 package main
 
 import (
-	"sheet-retrieve/config"
+	"sheet-retreive/config"
 	"sheet-retrieve/internal/adapters/meld"
 	"sheet-retrieve/utils"
 )

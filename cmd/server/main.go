@@ -2,13 +2,13 @@ package main
 
 import (
 	"sheet-retreive/config"
-	// "sheet-retrieve/internal/adapters/meld"
+	"sheet-retrieve/internal/adapters/meld"
 	"sheet-retrieve/utils"
 )
 
 func main() {
 	config := config.LoadConfig("", "")
 	logger := utils.SetupLogger(config.Logger.LogLevel, config.Logger.LogPath+config.UserList.LogFile)
-	// meldServer := meld.NewMeldServer(config, logger)
+	meldServer := meld.NewMeldServer(config, logger)
 	meldServer.Start()
 }
